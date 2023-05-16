@@ -10,12 +10,46 @@
 <body>
     <main>
         <section>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <article>1</article>
+            <article>2</article>
+            <article>3</article>
+            <article>4</article>
+            <article>5</article>
         </section>
     </main>
 </body>
 </html>
+
+
+<!-- 
+block요소의 5가지 특성
+1. 넓이값 미지정시 부모오소 넓이 값을 100% 상속
+2. 높이값 미지정시 자식요소의 높이값 총합이 자동 적용
+3. 자동 줄바꿈
+4. 블록요소, 인라인블록, 인라인 요소 모두 감쌀 수 있음 
+5. 기존의 블록요소를 좌우배치 하기 위해서는 float를 활용
+(자식요소에 적용)
+
+inline-block의 특성 (블록과 인라인특성 모두 포함)
+-인라인 요소인데 넓이와 높이값 설정 가능
+-float처리하지 않더라도 기본적으로 좌우배치됨
+
+flex
+-자식요소가 배치되는 방법을 부모 요소에서 설정
+-부모요소에 flex를 지정하면 자식 요소는 inline-block화 처리됨
+-flex에는 기본축, 반대축이라는 개념이 존재
+-따로 방햐을 지정하지않으면 기본축이 가로, 반대축이 세로
+-flex-direction으로 기본축 변경 가능
+-flex-direction: row (기본축을 가로로 변경 -디폴트값)
+-flex-direction: column (기본축을 세로로 변경)
+-justify-content: 기본축의 정렬 방식을 결정
+-align-contnet(줄바꿈 요소 있을떄), align-items(줄바꿈 요소가 없을때): 반대축의 정렬방식을 결정
+-flex-start: 시작방향 정렬
+-flex-end: 반대방향 정렬
+-center: 가운데 정렬
+-space-between: 양끝을 좌우로 붙이고 사이간격을 균등배치
+-space-around: 양끝도 간격을 균등 배치
+-space-evenly:양끝도 중첩된 간격포함 균등 배치
+-flex-wrap: 줄바꿈 속성 적용
+-flex-wrap 적용시에는 align-items가 아닌 align-content 적용
+-->

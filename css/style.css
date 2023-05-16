@@ -19,10 +19,16 @@ main {
 }
 main section {
   border: 10px solid blue;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
 }
 main section article {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background: aqua;
   border: 1px solid #000;
 }

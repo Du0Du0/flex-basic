@@ -7,10 +7,18 @@ main {
 
     section {
         border: 10px solid blue;
+        height: 100%;
+        display: flex;
+        //자식요소 배치는 부모요소에서 결정하는 것!
+        flex-wrap: wrap;
+        justify-content: center;
+        // flex-direction: column;
+        align-content: center;
+        gap: 50px;
 
         article {
-            width: 300px;
-            height: 300px;
+            width: 400px;
+            height: 400px;
             background: aqua;
             border: 1px solid #000;
         }
